@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intital-scale=1.0">
+    <meta name="description" content="HTML Semantic Elements Page">
+    <meta name="keywords" content="HTML, Sematic Elements, aside, article, header, nav, main, footer, section, mark">
+    <meta name="author" content="Thulani Langa">
+    <title>HTML Semantic Elements</title>
+    <style>
+        /* Basic styling for the semantic elements */
+        article, aside, details, figure, footer, header, main, mark, nav, section {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            background: #f9f9f9;
+        }
+
+        /* Styling for specific elements to visually distinguish them */
+        article {
+            background: pink;
+        }
+
+        aside {
+            background: lightblue;
+        }
+
+        details {
+            background: lightgreen;
+        }
+
+        figure {
+            background: lightslategrey;
+        }
+
+        footer {
+            background: lightseagreen;
+        }
+
+        header {
+            background: rgb(255, 255, 96);
+        }
+
+        main {
+            background: lightsteelblue;
+        }
+
+        mark {
+            background: yellow;
+        }
+
+        nav {
+            background: lightcyan;
+        }
+
+        section {
+            background: lightsalmon;
+        }
+
+        /* Styling for <summary> inside <details> */
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header Semantic Element -->
+    <header>
+        <h1>HTML Semantic Elements</h1>
+        <!-- Navigation usings Links -->
+        <nav>
+            <ul>
+                <li><a href="#aside">Aside</a></li>
+                <li><a href="#article">Article</a></li>
+                <li><a href="#details">Details</a></li>
+                <li><a href="#figure">Figure</a></li>
+                <li><a href="#footer">Footer</a></li>
+                <li><a href="#header">Header</a></li>
+                <li><a href="#main">Main</a></li>
+                <li><a href="#mark">Mark</a></li>
+                <li><a href="#section">Section</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Semantic Element -->
+    <main>
+        <!-- Article Semantic Element -->
+        <article id="article">
+            <h2>Article Element</h2>
+            <p>
+                This is an example of an <strong>article</strong> element.
+                It is typically used to represent a standalone piece of content.
+            </p>
+        </article>
+
+        <!-- Aside Semantic Element -->
+        <aside id="aside">
+            <h2>Aside Element</h2>
+            <p>
+                This is an example of an <strong>aside</strong> element.
+                It is used for content that is tangentiantially related to the content around it.
+            </p>
+        </aside>
+
+        <!-- Details Semantic Elements -->
+        <details id="details">
+            <summary>Details Element (Click to Expand)</summary>
+            <p>
+                This is an example of a <strong>details</strong> element.
+                It can contain extra information  that can be shown or hidden when clicked.
+            </p>
+        </details>
+
+        <!-- Figure Semantic Elements -->
+        <figure id="figure">
+            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+            <figcaption>
+                Figure: A placeholder image with a caption.
+            </figcaption>
+        </figure>
+
+        <!-- Footer Semantic Elements -->
+        <footer id="footer">
+            <h2>Footer Element</h2>
+            <p>
+                This is an example of a <strong>footer</strong> element.
+                It is used to represent foooter content for a document or section.
+            </p>
+        </footer>
+
+        <header id="header">
+            <h2>Header Element</h2>
+            <p>
+                This is an example of a <strong>header</strong> element.
+                It is used for introductory content or navigational links.
+            </p>
+        </header>
+        
+        <section id="section">
+            <h2>Section Element</h2>
+            <p>
+                This is an example of a <strong>section</strong> element.
+                It is used for grouping related content.
+            </p>
+        </section>
+
+        <mark id="mark">
+            <h2>Mark Element</h2>
+            <p>
+                This is an <mark>test this should be highlighted</mark> example of a <strong>mark</strong> element.
+                It is used to highlight parts if the text.
+            </p>
+        </mark>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright Thulani Langa 2024</p>
+    </footer>
+</body>
+</html>

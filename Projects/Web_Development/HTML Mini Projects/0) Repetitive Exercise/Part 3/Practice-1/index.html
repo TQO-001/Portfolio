@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Media Elements page">
+    <meta name="keywords" content="media, audio, video, iframe, youtube, google maps, image">
+    <meta name="author" content="Thulani Langa">
+    <title>Media Elements</title>
+    <style>
+        * {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            color: slategrey;
+        }
+
+        h2 {
+            color: steelblue;
+        }
+
+        .block {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        .empty {
+            height: 150px;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Semantic Elements -->
+    <header class="block">
+        <h1>Media Elements</h1>
+        <nav class="block">
+            <!-- Navigation with Links -->
+            <ul>
+                <li><a href="#audio">Audio Example</a></li>
+                <li><a href="#video">Video Example</a></li>
+                <li><a href="#iframe">Embedding an iFrame</a></li>
+                <li><a href="#map">Embedding a Map</a></li>
+                <li><a href="#image">Image Example</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Empty Space -->
+    <div class="empty"></div>
+
+    <!-- Main Semantic Element -->
+    <main id="main" class="block">
+        <!-- Audio Element -->
+        <section class="block">
+            <h2>Audio Example</h2>
+            <audio controls>
+                <source src="#" type="mp3/audio">
+                Your browser does not support the audio element
+            </audio>
+        </section>
+
+        <!-- Video Element -->
+        <section id="video" class="block">
+            <h2>Video Example</h2>
+            <video controls>
+                <source src="#" type="mp4/video">
+                Your browser does not support the video element
+            </video>
+        </section>
+
+        <!-- iFrame (YouTube) Example -->
+        <section>
+            <h2>Embedding an iFrame</h2>
+            <iframe height="300" width="auto" src="https://www.youtube.com/embed/3uTbxGAGTG8" title="Flawed Mangoes - Swimming  (1 hour Loop)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <!-- iFrame (Google Maps) example -->
+        <section id="map" class="block">
+            <h1>Embedding a Map</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3469.661341231897!2d30.37593277483484!3d-29.584455410097288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef6bb632ac67f3b%3A0x5dac15585098b249!2sLiberty%20Midlands%20Mall!5e0!3m2!1sen!2sza!4v1732251465795!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section id="image" class="block">
+            <h1>Image Example</h1>
+            <figure>
+                <img src="https://via.placeholder.com/200">
+                <figcaption>
+                    Figure: This is a placeholder image.
+                </figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <!-- Empty Space -->
+    <div class="empty"></div>
+
+    <footer class="block">
+        <p>&copy; Copyright Thulani Langa 2024</p>
+    </footer>
+</body>
+</html>

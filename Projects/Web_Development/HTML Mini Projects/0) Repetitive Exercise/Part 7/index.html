@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Top Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar container */
+        .navbar {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #333;
+            padding: 0.5rem 1rem;
+        }
+
+        /* Navbar links */
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            text-align: center;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 4px;
+        }
+
+        /* Responsive dropdown button */
+        .menu-btn {
+            display: none;
+            color: white;
+            font-size: 1.5rem;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+
+        /* Navbar links container for flex layout */
+        .navbar-links {
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+        }
+
+        /* Responsive design */
+        @media screen and (max-width: 768px) {
+            .navbar-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .navbar-links.active {
+                display: flex;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            <div class="navbar-links" id="navbarLinks">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const navbarLinks = document.getElementById("navbarLinks");
+            navbarLinks.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

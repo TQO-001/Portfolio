@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    height: auto; /* This ensures the body takes the full height of the viewport */
+    margin: 0; /* Ensure there's no margin at the top of the page */
+}
+
+h1 {
+    text-align: center;
+}
+
+#fileExplorer {
+    padding-left: 20px;
+}
+
+.folder {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sub-folder {
+    padding-left: 20px;
+}
+
+.file {
+    cursor: default;
+}
+
+.menu {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    border: 3px dotted red;
+    background-color: none; /* Add background-color to prevent transparency issues */
+    z-index: 1000; /* Make sure it's on top of other content */
+}
+
+.button-container {
+    display: flex;
+    margin: 1.5em auto;
+    background-color: rgba(245, 73, 144, 0.8); /* Slight opacity for a better effect */
+    width: 250px;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px, rgba(245, 73, 144, 0.5) 5px 10px 15px;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.8em;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+.empty {
+    height: 1500px; /* This space is just to make sure there's enough content to scroll */
+}

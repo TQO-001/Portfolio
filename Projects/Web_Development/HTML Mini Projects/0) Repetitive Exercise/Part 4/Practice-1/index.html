@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML Forms page">
+    <meta name="keywords" content="Contact, Form, input">
+    <meta name="author" content="Thulani Langa">
+    <title>HTML Forms Page</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            margin: 50px 15px;
+            font-size: 1em;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: darkcyan;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            color: lightseagreen;
+        }
+
+        form {
+            width: 60%;
+            padding: 20px;
+            margin: 20px 0;
+            font-size: 1.1em;
+            background: rgb(190, 71, 214);
+            color: #f9f9f9;
+            font-weight: 550;
+            border-radius: 15px;
+        }
+
+        #name, #surname, #email, #password, #age,
+        #DOB, #gender, #phone-number, #website, 
+        #search, #appointment, #month, #week {
+            width: 90%;
+            height: 2em;
+            font-size: 1em;
+            margin-bottom: 1.5em;
+            padding: 0 0.7em;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: lavenderblush;
+        }
+
+        form #checkbox, 
+        form #radio-yes, 
+        form #radio-no {
+            height: 1.5em;
+            width: auto;
+        }
+
+        form textarea {
+            width: 80%;
+            font-size: 1em;
+            margin-bottom: 1.5em;
+            padding: 0.7em;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: lavenderblush;
+        }
+
+        form button {
+            width: 8em;
+            height: 3em;
+            font-size: 1em;
+            color: #f9f9f9;
+            padding: 0.7em;
+            margin-bottom: 1.5em;
+            border: 1px solid;
+            border-radius: 25px;
+            background-color: lightslategrey;
+        }
+
+        form #file {
+            font-size: 1em;
+            margin-bottom: 1.5em;
+            padding: 0 0.7em;
+            border-radius: 10px;
+        }
+
+        form #range {
+            width: 90%;
+        }
+
+        .empty {
+            height: 300px;
+            width: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header Semantic Element -->
+    <header class="block">
+        <h1>HTML Forms Page</h1>
+    </header>
+
+    <!-- Main Semantic Element -->
+    <main>
+        <h2>Contact Form</h2>
+
+        <section class="common-forms">
+            <!-- Common Form Elements -->
+            <h3>Common Form Elements</h3>
+            <form>
+                <!-- Name -->
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="John">
+                <br>
+
+                <!-- Surname -->
+                <label for="surname">Surname:</label><br>
+                <input type="text" id="surname" name="surname" placeholder="Doe">
+                <br>
+
+                <!-- Email -->
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="example@domain.com">
+                <br>
+
+                <!-- Password -->
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password">
+                <br>
+
+                <!-- Age -->
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age">
+                <br>
+
+                <!-- Date Of Birth (DOB) -->
+                <label for="DOB">Date Of Birth:</label><br>
+                <input type="date" id="DOB" name="Date-Of-Birth">
+                <br>
+
+                <!-- Gender -->
+                <label for="gender">Gender:</label>
+                <select id="gender">
+                    <option id="male">Male</option>
+                    <option id="female">Female</option>
+                    <option id="other">Other</option>
+                </select>
+
+                <!-- Comments -->
+                <label for="comments">Comments:</label>
+                <textarea id="comments" placeholder="Write your comments here"></textarea>
+                <br>
+
+                <!-- Checkbox -->
+                <label for="checkbox">Subscribe to newsletter</label><br>
+                <input type="checkbox" id="checkbox" name="checkbox" checked>
+                <br>
+                
+                <!-- Radio box -->
+                <p>Do you know the muffin man?</p>
+                <label for="yes">Yes</label>
+                <input type="radio" id="radio-yes" name="radio">
+                <br>
+                <label for="no">No</label>
+                <input type="radio" id="radio-no" name="radio" checked>
+                <br>            
+
+                <!-- Buttons -->
+                <button id="submit" type="submit">Submit</button>
+                <br>
+                <button id="reset" type="reset">Reset</button>
+                <br>
+            </form>
+        </section>
+
+        <section class="less-common-forms">
+            <!-- Common Form Elements -->
+            <h3>Less Common Form Elements</h3>
+            <form>
+                <!-- File -->
+                <label for="file">Upload File</label><br>
+                <input type="file" id="file" name="file">
+                <br>
+
+                <!-- Color -->
+                <label for="color">Choose a Color:</label><br>
+                <input type="color" id="color" name="color">
+                <br>
+
+                <!-- Range -->
+                <label for="range">Range</label><br>
+                <input type="range" id="range" name="range" value="20">
+                <br>
+
+                <!-- Phone Number -->
+                <label for="phone-number">Phone Number</label><br>
+                <input type="tel" id="phone-number" name="phone-number" placeholder="xxx xxx xxxx">
+                <br>
+
+                <!-- Website URL -->
+                <label for="website">Website URL:</label><br>
+                <input type="url" id="website" name="website" placeholder="https://example.com">
+                <br>
+
+                <!-- Search -->
+                <label for="search">Search:</label><br>
+                <input type="search" id="search" name="search">
+                <br>
+
+                <!-- Appointment -->
+                <label for="appointment">Appointment:</label><br>
+                <input type="datetime-local" id="appointment" name="appointment">
+                <br>
+
+                <!-- Month -->
+                <label for="month">Select Month</label><br>
+                <input type="month" id="month" name="month">
+                <br>
+
+                <!-- Week -->
+                <label for="week">Select Week</label><br>
+                <input type="week" id="week" name="week">
+                <br>
+
+            </form>
+        </section>
+
+
+    </main>
+
+    <div class="empty"></div>
+
+    <footer>
+        <p>&copy; Copyright Thulani Langa 2024</p>
+    </footer>
+</body>
+</html>

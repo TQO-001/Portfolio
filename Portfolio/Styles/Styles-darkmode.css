@@ -1,0 +1,156 @@
+.dark-mode-button {
+    background: none; /* No background */
+    color: #fff; /* White text for contrast */
+    border: none; /* Bold red border */
+    padding: 10px 15px; /* Bold padding */
+    cursor: pointer;
+    border-radius: 0; /* Sharp edges for that brutalistic look */
+    transition: all 0.3s ease; /* Smooth transitions */
+}
+
+/* Icon styling */
+.dark-mode-button i {
+    color: var(--primary-color);
+    font-size: 2rem; /* Icon size */
+    transition: transform 0.3s ease; /* Slight rotation effect on hover */
+}
+
+.dark-mode-button:active i {
+    color: aquamarine;
+    transform: rotate(180deg); /* Icon rotates on hover for added aggressiveness */
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: var(--color-bg-dark);
+    color: var(--secondary-color-dark);
+}
+
+.dark-mode nav li a {
+    color: var(--secondary-color-dark)
+}
+
+.dark-mode nav li a.active {
+    color: var(--header-link-color-dark);
+    background-color: var(--primary-color);
+    box-shadow: var(--box-shadow-code-dark);
+}
+
+.dark-mode nav li a:hover:not(.active) {
+    color: var(--header-link-color-dark);
+    box-shadow: var(--box-shadow-code-dark);
+}
+
+.dark-mode nav .dropdown-content, nav .sub-dropdown {
+    background-color: var(--primary-color);
+}
+
+/* Dark Mode Color Changes */
+.dark-mode .details {
+    background-color: var(--color-bg-dark);
+    color: var(--secondary-color-dark);
+}
+
+.dark-mode .descriptive-info {
+    color: var(--secondary-color-dark);
+}
+
+.dark-mode .profession {
+    color: var(--primary-color); /* Primary color for profession text */
+}
+
+.dark-mode .contact-info-head {
+    color: var(--secondary-color-dark);
+}
+
+.dark-mode .vertical-line {
+    color: var(--primary-color);
+}
+
+/* Icons in dark mode */
+.dark-mode .icons {
+    color: var(--primary-color);
+}
+
+/* Links in dark mode */
+.dark-mode a {
+    color: var(--primary-color); /* Links in primary color */
+}
+
+.dark-mode a:hover {
+    color: #00b3b3; /* Lighten on hover */
+}
+
+/* Profile Image Border */
+.dark-mode .profile-image img {
+    border: 3px solid var(--secondary-color-dark);
+}
+
+/* Vertical Lines in dark mode */
+.dark-mode .vertical-line {
+    color: var(--primary-color);
+}
+
+/* Headings in dark mode */
+.dark-mode h1 {
+    color: var(--primary-color);
+    text-shadow: var(--text-shadow-dark-two);
+}
+
+.dark-mode h2 {
+    color: var(--tertiary-color-dark);
+    border-bottom: 6px solid var(--secondary-color-dark);
+    text-shadow: var(--text-shadow-dark);
+}
+
+.dark-mode h3 {
+    color: var(--tertiary-color-dark);
+}
+
+.dark-mode .header .details {
+    color: var(--secondary-color-dark)
+}
+
+/* Profile card in dark mode */
+.dark-mode .profile-card {
+    color: var(--secondary-color);
+}
+
+.dark-mode .profile-card::before {
+    background-color: var(--primary-color);
+}
+
+/* Icons in dark mode */
+.dark-mode .icons {
+    color: var(--primary-color);
+}
+
+/* Scrollbar in dark mode */
+.dark-mode::-webkit-scrollbar-track {
+    background: var(--tertiary-color);
+}
+
+.dark-mode::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+
+.dark-mode::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+
+/* Adjust colors of specific elements */
+.dark-mode .reference-item .name,
+.dark-mode .reference-item .job,
+.dark-mode .reference-item .contact-info .email,
+.dark-mode .reference-item .cell,
+.dark-mode .reference-item .website {
+    color: var(--secondary-color);
+}
+
+.dark-mode .marquee-text p {
+    box-shadow: var(--box-shadow-code-dark);
+}
+
+.dark-mode .brutalist-table {
+    box-shadow: var(--box-shadow-code-dark);
+}

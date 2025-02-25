@@ -1,0 +1,14 @@
+{
+    "name": "file-explorer",
+    "version": "1.0.0",
+    "description": "Dynamic File Explorer for Website Navigation",
+    "main": "server/server.js",
+    "scripts": {
+        "start": "node server/server.js"
+    },
+    "dependencies": {
+        "chokidar": "^3.5.2",
+        "express": "^4.17.1",
+        "ws": "^8.18.0"
+    }
+}

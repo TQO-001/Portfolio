@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Text Elements, Lists, Interactive Elements, and Tables">
+    <meta name="keywords" content="HTML, Text, Lists, Tables, Interactive Elements">
+    <meta name="author" content="Your Name">
+    <title>Text, Lists, and Tables</title>
+</head>
+<body>
+    <header>
+        <h1>Text, Lists, and Tables</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Text Elements</h2>
+            <p><strong>Strong text</strong> <em>Emphasized text</em></p>
+            <p><b>Bold text</b> <i>Italic text</i></p>
+            <p>H<sub>2</sub>O (Subscript) E=MC<sup>2</sup> (Superscript)</p>
+        </section>
+        <hr>
+
+        <section>
+            <h2>Lists</h2>
+            <h3>Unordered List</h3>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <h3>Ordered List</h3>
+            <ol>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ol>
+            <h3>Description List</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Hypertext Markup Language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+            </dl>
+        </section>
+        <hr>
+
+        <section>
+            <h2>Tables</h2>
+            <!-- Common Table Elements -->
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Heading 1</th>
+                        <th>Heading 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Row 1, Col 1</td>
+                        <td>Row 1, Col 2</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2, Col 1</td>
+                        <td>Row 2, Col 2</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr>
+
+            <!-- Less Common Table Elements -->
+            <table border="1">
+                <caption>Table Caption</caption>
+                <colgroup>
+                    <col span="1" style="background-color: lightblue;">
+                    <col span="1" style="background-color: lightgreen;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Heading 1</th>
+                        <th>Heading 2</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Footer Row</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Rowspan Example</td>
+                        <td>Row 1, Col 2</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2, Col 2</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Colspan Example</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <hr>
+
+        <section>
+            <h2>Interactive Elements</h2>
+            <button onclick="alert('Button clicked!')">Click Me</button>
+            <details>
+                <summary>More Info</summary>
+                <p>This is additional information that is revealed when clicked.</p>
+            </details>
+        </section>
+        <hr>
+    </main>
+</body>
+</html>

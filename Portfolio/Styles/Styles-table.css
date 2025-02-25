@@ -1,0 +1,42 @@
+.brutalist-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Courier New", monospace;
+    color: #333;
+    background-color: #f8f8f8;
+    box-shadow: var(--box-shadow-code);
+    margin: 20px 0;
+  }
+
+  .brutalist-table th, .brutalist-table td {
+    padding: 20px;
+    text-align: left;
+    border: 3px solid #000;
+  }
+
+  .brutalist-table th {
+    font-size: 1.3em;
+    color: #fff;
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .brutalist-table td {
+    background-color: #f0f0f0;
+    font-size: 1.1em;
+  }
+
+  .brutalist-table tr:nth-child(even) td {
+    background-color: rgba(0, 174, 255, 0.2);
+  }
+  
+  .brutalist-table td {
+    font-weight: bold;
+    line-height: 1.5em;
+  }
+
+  .brutalist-table td,
+  .brutalist-table th {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }

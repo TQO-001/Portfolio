@@ -1,0 +1,1 @@
+-e "# Database Diagrams\n\nDiagrams for projects such as school or supermarket systems." 
