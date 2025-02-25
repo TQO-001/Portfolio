@@ -56,27 +56,65 @@ console.log("\n");
 ----------------------------------------------
 */ 
 Heading("Loops");
-SubHeading("For Loop");
+SubHeading("(1) For Loop");
 for(let i = 1; i <= 5; i++) {
     console.log("Iteration: ", i)
 }
 
-SubHeading("While Loop", 2);
+SubHeading("(2) While Loop", 2);
 let x = 1;
 while(x <= 5) {
     console.log("Iteration: ", x);
     x++;
 }
 
-SubHeading("Do-While Loop", 2);
+SubHeading("(3) Do-While Loop", 2);
 let y = 1;
 do {
     console.log("Iteration: ", y);
     y++;
 } while (y <= 5);
 
-console.log("\n");
+console.log('\n');
 
+/*
+----------------------------------------------
+    Break & Continue
+----------------------------------------------
+*/
+Heading("Break & Continue")
+
+for (let i = 1; i <= 5; i++) {
+    if (i === 3) {
+        continue;
+    }
+    console.log(i);
+}
+
+console.log('\n');
+
+for (let i = 1; i <= 5; i++) {
+    console.log(i); // we want to print the i before breaking
+    if (i === 3) {
+        break;
+    }
+}
+
+console.log('\n');
+
+/*
+----------------------------------------------
+    EXERCISE: Fizzbuzz
+----------------------------------------------
+*/ 
+Heading("EXERCISE: FizzBuzz")
+
+for(let i = 1; i <= 50; ++i) {
+    if(i % 3 === 0 && i % 5 === 0) console.log('FizzBuzz');
+    else if(i % 3 === 0) console.log('Fizz');
+    else if(i % 5 === 0) console.log('Buzz');
+    else console.log(i)
+}
 /*
 ----------------------------------------------
     Fibonacci Sequence
