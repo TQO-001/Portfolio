@@ -1,0 +1,45 @@
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-contact-info {
+        margin: 2rem 0;
+        flex: 1 100%;
+        text-align: center;
+    }
+
+    .footer-links {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .socials {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .footer-image img {
+        max-width: 15rem;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        font-size: 0.875rem;
+    }
+
+    .footer-contact-info h4 {
+        font-size: 1.25rem;
+    }
+
+    .footer-contact-info p {
+        font-size: 0.875rem;
+    }
+
+    .footer-image img {
+        max-width: 18rem;
+    }
+}

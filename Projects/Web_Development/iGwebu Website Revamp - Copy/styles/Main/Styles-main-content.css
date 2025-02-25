@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap');
+
+main {
+    font-family: 'Poppins', sans-serif;
+    margin: 1rem;
+    position: relative;
+    min-height: 100%;
+    flex: 1;
+}
+
+main p {
+    font-size: 1.25rem; /* 20px to 1.25rem */
+    font-weight: 200;
+}
+
+main h1 {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.875rem; /* 46px to 2.875rem */
+    letter-spacing: -0.1875rem; /* -3px to -0.1875rem */
+    text-align: center;
+    text-transform: uppercase;
+    flex: 1;
+    color: #aa00aa;
+    text-shadow: 0.3125rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.4), -0.125rem -0.125rem 0.25rem rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.socials-container {
+  display: flex;
+  gap: 1.5rem; /* Replaced 25px with rem */
+}
+
+.socials-container a {
+  background-color: white;
+  padding: 1rem; /* Replaced 1em with rem */
+  border-radius: 50%;
+  height: 4rem; /* Replaced 64px with rem */
+  width: 4rem; /* Replaced 64px with rem */
+  box-sizing: border-box;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.05); /* Replaced px with rem */
+}
+
+.socials-container a svg {
+  height: 2rem; /* Replaced 32px with rem */
+}
+
+.socials-container a::before {
+  content: attr(data-social);
+  position: absolute;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem; /* Replaced px with rem */
+  border-radius: 100px;
+  box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.05); /* Replaced px with rem */
+  transform: translateY(-1.875rem) rotate(25deg); /* Replaced px with rem */
+  opacity: 0;
+  transition: 200ms cubic-bezier(.42,0,.44,1.68);
+}
+
+.socials-container a:hover {
+  background-color: var(--accent-color);
+  fill: white;
+}
+
+.socials-container a::after {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-left: 0.5rem solid transparent; /* Replaced px with rem */
+  border-right: 0.5rem solid transparent; /* Replaced px with rem */
+  border-top: 0.625rem solid var(--accent-color); /* Replaced px with rem */
+  transform: translateY(0) rotate(25deg);
+  opacity: 0;
+  transition: 200ms cubic-bezier(.42,0,.44,1.68);
+}
+
+.socials-container a:hover::before {
+  transform: translateY(-4rem) rotate(0); /* Replaced px with rem */
+  opacity: 1;
+}
+
+.socials-container a:hover::after {
+  transform: translateY(-2.625rem) rotate(0); /* Replaced px with rem */
+  opacity: 1;
+}

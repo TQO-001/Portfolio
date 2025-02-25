@@ -1,0 +1,14 @@
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .socials-container {
+      gap: 1rem;
+    }
+    .socials-container a {
+      height: 3rem;
+      width: 3rem;
+      padding: 0.75rem;
+    }
+    .socials-container a svg {
+      height: 1.5rem;
+    }
+  }

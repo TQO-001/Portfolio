@@ -1,0 +1,17 @@
+@media (max-width: 480px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-form {
+        padding: 2rem 1rem;
+    }
+
+    .contact-form hr {
+        width: 50%;
+    }
+
+    .contact-form button {
+        width: 80%;
+    }
+}

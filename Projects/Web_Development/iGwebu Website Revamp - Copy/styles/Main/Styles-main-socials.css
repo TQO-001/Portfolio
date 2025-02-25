@@ -1,0 +1,30 @@
+/* Wrapper for the socials container */
+.socials {
+    display: flex; /* Use flex layout for the entire container */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    position: relative;
+    margin: 0 auto; /* Optional: Center the container itself */
+}
+
+/* Information section for socials */
+.socials-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 5rem; /* 90px -> 5rem for consistency */
+    width: 100%; /* Ensures it spans the width of the container */
+}
+
+/* Container for social icons */
+.socials-container {
+    margin: 3.75rem 0; /* 60px -> 3.75rem for consistency */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%; /* Ensures it spans the width of the container */
+}

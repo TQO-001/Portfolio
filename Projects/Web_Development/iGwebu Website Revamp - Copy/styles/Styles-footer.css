@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap');
+
+/* Footer Container */
+footer {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
+    padding: 2rem; /* Use rem for better responsiveness */
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #df00df; /* Accent color on hover */
+}
+
+/* Footer Content Container */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footer-image, .footer-hero, .footer-socials, .footer-hero-bottom {
+    width: 100%;
+    height: auto;
+}
+
+/* Image Section */
+.footer-image img {
+    max-width: 12.5rem; /* 200px -> 12.5rem */
+    height: auto;
+}
+
+/* Footer Main Section */
+.footer-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+/* Contact Info Section */
+.footer-contact-info {
+    flex: 1 30%;
+    margin: 0 4.375rem; /* 70px -> 4.375rem */
+    text-align: left;
+}
+
+.footer-contact-info h4 {
+    color: #df00df;
+    font-size: 1.5rem;
+    margin-bottom: 1rem; /* 10px -> 1rem */
+}
+
+.footer-contact-info p {
+    font-size: 1rem;
+    margin: 0.3125rem 0; /* 5px -> 0.3125rem */
+}
+
+.footer-contact-info .address {
+    margin-left: 1em;
+    width: 100%;
+}
+
+/* Navigation footer-Links */
+.footer-links {
+    flex: 1 70%;
+    margin-top: 2.5rem; /* 40px -> 2.5rem */
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 0.625rem; /* 10px -> 0.625rem */
+}
+
+/* Social footer-Links Section */
+.socials {
+    flex: 1 1 30%;
+}
+
+.socials-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem; /* 20px -> 1.25rem */
+}
+
+/* Footer Hero Bottom Section */
+.footer-hero-bottom {
+    margin-top: 1.25rem; /* 20px -> 1.25rem */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .footer-contact-info {
+        margin: 2rem 0;
+        flex: 1 100%;
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .footer-links {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .socials {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .footer-image img {
+        max-width: 15rem; /* Allow image to resize on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-contact-info {
+        margin: 2rem 0;
+    }
+
+    .footer-links {
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+
+    .footer-image img {
+        max-width: 18rem; /* Further adjust for very small screens */
+    }
+}

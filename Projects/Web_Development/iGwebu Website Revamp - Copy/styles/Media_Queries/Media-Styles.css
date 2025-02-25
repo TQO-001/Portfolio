@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.75rem; /* Reduce size for smaller screens */
+    }
+    h3 {
+        font-size: 1.25rem;
+    }
+    .hr-left, .hr-center {
+        width: 50%; /* Adjust for smaller screens */
+    }
+    .empty, .empty-2 {
+        height: 4rem; /* Reduce spacing */
+    }
+}

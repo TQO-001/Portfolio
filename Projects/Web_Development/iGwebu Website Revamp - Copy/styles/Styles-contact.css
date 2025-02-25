@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap');
+
+.contact-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 5rem auto;
+    display: flex;
+    box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.4);
+    border-radius: 5rem 0;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.contact-container:hover {
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+}
+
+.contact-info, .contact-form {
+    padding: 3rem 2rem;
+    color: #fff;
+}
+
+.contact-info {
+    background: linear-gradient(30deg, #a600ff 29%, #f207eb 100%);
+    flex: 1;
+}
+
+.contact-info strong {
+    color: #fff;
+}
+
+.contact-info h2, .contact-form h2 {
+    margin-bottom: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0 1.25rem;
+}
+
+.contact-info ul li {
+    margin-bottom: 0.625rem;
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+.contact-info ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-form {
+    font-family: 'Poppins', sans-serif;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-form hr {
+    height: 0.25rem;
+    width: 30%;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #f970ff 100%);
+    border-radius: 0.125rem;
+    margin: 1.25rem auto;
+}
+
+.contact-form form {
+    max-width: 22rem;
+    width: 100%;
+    margin-top: 1.25rem;
+}
+
+.contact-form input, textarea {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.625rem;
+    border: none;
+    border-radius: 0.3125rem;
+    box-shadow: 0 0 1.875rem rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: gray; /* Change text color */
+    font-size: 1.125em; /* Change font size */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    height: 2.5rem;
+}
+
+.contact-form textarea {
+    height: 9.375rem;
+    resize: vertical;
+}
+
+.contact-form button {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+    background: linear-gradient(45deg, #6a0dad 0%, #a600ff 50%, #f207eb 100%);
+    box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.2);
+    width: 60%;
+    margin-bottom: 1.25rem;
+    padding: 0.625rem;
+    border: none;
+    border-radius: 1.875rem;
+    box-sizing: border-box;
+}
+
+.contact-form button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(30deg, #9200e8 29%, #e306d6 100%);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form button:focus {
+    outline: 2px dashed #a600ff;
+    outline-offset: 4px;
+}
