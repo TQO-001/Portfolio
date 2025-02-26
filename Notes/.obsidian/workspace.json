@@ -22,49 +22,21 @@
             }
           },
           {
-            "id": "1702808f360042b3",
+            "id": "924efb82b45c8cf2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "(1) Web Development Notes/README - CSS.md",
+                "file": "(6) Mathematics/Evil/README - Mathematics For Evil.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README - CSS"
-            }
-          },
-          {
-            "id": "9f18611d3f60526f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "(1) Web Development Notes/README - HTML5.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "README - HTML5"
-            }
-          },
-          {
-            "id": "2157d02b92406b22",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "(1) Web Development Notes/README - JavaScript.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "README - JavaScript"
+              "title": "README - Mathematics For Evil"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -206,13 +178,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2157d02b92406b22",
+  "active": "270c20a0fd2fc4e8",
   "lastOpenFiles": [
-    "(1) Web Development Notes/README - HTML5.md",
+    "(6) Mathematics/Evil",
+    "(6) Mathematics/Mathematics 1/README - Mathematics I.md",
+    "(6) Mathematics/Evil/README - Mathematics For Evil.md",
+    "(6) Mathematics/Mathematics 1/Personal Notes/README - General Notes on Mathematics.md",
     "(1) Web Development Notes/README - JavaScript.md",
+    "(6) Mathematics/ADD THESE NOTES TO JAVASCRIPT NOTES.md",
     "(1) Web Development Notes/README - Web Developer Notes.md",
-    "Additional/Langa Empire/0) Planning/0.Business Dynasty Plan.md",
+    "(6) Mathematics/Mathematics 1/Personal Notes",
+    "(6) Mathematics/Mathematics 1",
+    "(6) Mathematics/Mathematics",
+    "(6) Mathematics",
+    "Mathematics/Mathematics/Mathematics/Personal Notes/README - General Notes on Mathematics.md",
+    "Mathematics/Mathematics/Mathematics/README - Day 1 -- Mathematics I.md",
+    "Mathematics/Mathematics/ADD THESE NOTES TO JAVASCRIPT NOTES.md",
+    "Mathematics/Mathematics/Mathematics/Personal Notes",
+    "Mathematics/Mathematics/Mathematics",
+    "Mathematics/Mathematics",
+    "Mathematics",
     "(1) Web Development Notes/README - CSS.md",
+    "(1) Web Development Notes/README - HTML5.md",
+    "Additional/Langa Empire/0) Planning/0.Business Dynasty Plan.md",
     "(1) Web Development Notes/README - React.md",
     "(1) Web Development Notes/CSS Selectors/README.md",
     "(0) Git Notes/Git-Cheatsheet.pdf",
@@ -224,35 +212,19 @@
     "(1) Web Development Notes/CheatSheets/Array-Cheatsheet.jpg",
     "(5) Cloud/deploy-heroku.md",
     "(0) Git Notes/git-cheat-sheet-education.pdf",
-    "(5) Cloud",
     "Projects.md",
-    "(3) Database (SQL)",
-    "(2) App Development Notes",
     "(0) Git Notes/Git Notes.md",
-    "Additional",
     "(1) Web Development Notes/Networking Website/Documentation/Documentation - Learn Page.md",
     "Shi I want/README.md",
     "Web Development Notes/Web Development Exercises.md",
     "Traditional Healing (uMelaphi Wendabuko)/Roles and Positions.md",
     "(0) Projects/Skill Tracker Portfolio/Skill Tracker Portfolio Website.md",
     "Jewelers.md",
-    "Jewelers.pdf",
     "Networking Website 1/Documentation/Documentation - Learn Page.md",
-    "Networking Website 1/Documentation",
-    "Networking Website 1",
-    "(1) Web Development Notes/Networking Website/Documentation",
     "Networking Website/Phase 1 - Extended Plan.md",
-    "Networking Website/Phase 1 - Planning and Research.md",
-    "Additional/Langa Empire/1) Poultry Farm/README.md",
-    "Additional/Langa Empire/0) Planning/1.Tech Automation.md",
-    "Additional/Langa Empire/1) Poultry Farm/Langa Dynasty - Chicken.md",
-    "Additional/Langa Empire/1) Poultry Farm/Phase 1 - Egg Production/README.md",
-    "Additional/Langa Empire/1) Poultry Farm/1.Land & Infrastructure/README.md",
     "Additional/Langa Empire/1) Poultry Farm/sources/Battery Cage System.jpg",
     "Langa Empire/1) Poultry Farm/sources/Battery_Cage_System.jpg",
     "Additional/Langa Empire/1) Poultry Farm/sources/Floating-pump-in-river-to-pressure-tank-for-sprinkler.jpg",
-    "Additional/Langa Empire/1) Poultry Farm/sources/Vertical-Lift-Diagram-watermission.org_.png",
-    "Additional/Langa Empire/1) Poultry Farm/README_2.md",
-    "Langa Empire/1) Poultry Farm/1.Land & Infrastructure/1.Land.md"
+    "Additional/Langa Empire/1) Poultry Farm/sources/Vertical-Lift-Diagram-watermission.org_.png"
   ]
 }
