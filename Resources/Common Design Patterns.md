@@ -1,1 +1,0 @@
--e "# Common Design Patterns\n\nNotes on patterns like MVC, MVVM, Repository, Singleton with examples." 
