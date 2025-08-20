@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/gh/creativetimofficial/david-ai@1.0.6/packages/dist/david-ai.min.js"></script>
+    <title>Document</title>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-clifford: #da373d;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-stone-700 to-stone-900 text-gray-900 dark:bg-gray-800 dark:text-gray-200">
+    <header>
+        <nav class="sticky top-0 z-50 overflow-hidden bg-white/10 border border-white/20 bg-white/10 bg-clip-padding backdrop-blur-md shadow-lg dark:bg-gray-800/30 mx-auto w-full max-w-screen-xl p-2 rounded-b-xl dark:text-gray-200">
+            <div class="flex items-center">
+                <a href="#" class="font-sans antialiased text-sm text-current ml-2 mr-2 block py-1 font-semibold">Thulani Langa</a>
+                <hr class="ml-1 mr-1.5 hidden h-5 w-px border-l border-secondary-dark lg:block" />
+                <div class="hidden lg:block">
+                    <ul class="mt-4 flex flex-col gap-x-3 gap-y-1.5 lg:mt-0 lg:flex-row lg:items-center">
+                    <li><a href="#" class="font-sans antialiased text-sm text-current flex items-center gap-x-2 p-1 hover:text-primary">Pages</a></li>
+                    <li><a href="#" class="font-sans antialiased text-sm text-current flex items-center gap-x-2 p-1 hover:text-primary">Account</a></li>
+                    <li><a href="#" class="font-sans antialiased text-sm text-current flex items-center gap-x-2 p-1 hover:text-primary">Blocks</a></li>
+                    <li><a href="#" class="font-sans antialiased text-sm text-current flex items-center gap-x-2 p-1 hover:text-primary">Docs</a></li>
+                    </ul>
+                </div>
+                <div class="place-items-center border align-middle select-none font-sans font-medium text-center transition-all duration-300 ease-in disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-sm min-w-[34px] min-h-[34px] rounded-md bg-transparent border-transparent text-stone-800 hover:bg-stone-200/10 hover:border-stone-600/10 shadow-none hover:shadow-none ml-auto grid lg:hidden">
+                    <svg width="1.5em" height="1.5em" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor" class="h-4 w-4">
+                    <path d="M3 5H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M3 12H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M3 19H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="overflow-hidden transition-[max-height] duration-300 ease-in-out max-h-0 lg:hidden" id="sticky-navbar-collapse">
+            <ul class="flex flex-col gap-0.5 mt-2">
+                <li><a href="#" class="font-sans antialiased text-sm text-current flex items-center gap-x-2 p-2 hover:text-primary hover:bg-stone-100 rounded-md">Pages</a></li>
+                <li><a href="#" class="font-sans antialiased text-sm text-current flex items-center gap-x-2 p-2 hover:text-primary hover:bg-stone-100 rounded-md">Account</a></li>
+                <li><a href="#" class="font-sans antialiased text-sm text-current flex items-center gap-x-2 p-2 hover:text-primary hover:bg-stone-100 rounded-md">Blocks</a></li>
+                <li><a href="#" class="font-sans antialiased text-sm text-current flex items-center gap-x-2 p-2 hover:text-primary hover:bg-stone-100 rounded-md">Docs</a></li>
+                <li class="mt-2">
+                <button class="w-full items-center justify-center border align-middle select-none font-sans font-medium text-center duration-300 ease-in disabled:opacity-50 disabled:shadow-none disabled:cursor-not-allowed focus:shadow-none text-sm py-1.5 px-3 shadow-sm hover:shadow bg-stone-800 hover:bg-stone-700 relative bg-gradient-to-b from-stone-700 to-stone-800 border-stone-900 text-stone-50 rounded-lg hover:bg-gradient-to-b hover:from-stone-800 hover:to-stone-800 hover:border-stone-900 after:absolute after:inset-0 after:rounded-[inherit] after:box-shadow after:shadow-[inset_0_1px_0px_rgba(255,255,255,0.25),inset_0_-2px_0px_rgba(0,0,0,0.35)] after:pointer-events-none transition antialiased">
+                    Sign In
+                </button>
+                </li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="grid grid-cols-3 grid-rows-1 gap-4 mx-auto w-full max-w-screen-xl p-2 rounded-b-xl dark:text-gray-200">
+        <div class="h-[1000px] bg-cyan-400">1</div>
+        <div class="h-[1000px] bg-red-500 col-span-2">2</div>
+    </div>
+
+    <footer class="z-50 m-4 w-[60%] mx-auto rounded-xl border border-white/20 bg-white/10 bg-clip-padding backdrop-blur-md shadow-lg dark:bg-gray-800/30"> 
+        <div class="w-full p-4 md:flex md:items-center md:justify-between text-center">
+            <p class="mx-auto ">Thank you for viewing my Portfolio</p>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>
