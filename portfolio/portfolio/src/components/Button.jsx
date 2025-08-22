@@ -1,13 +1,18 @@
 import React from 'react';
 import './Button.css'; // Import the CSS file
 
-const Button = ({ icon = {}, text = "Button" }) => {
+const Button = ({ icon = {}, text = "Button", download, link, props={} }) => {
   return (
     <div className="button-wrapper">
-      <button className="cssbuttons-io-button">
+      <a 
+        className="cssbuttons-io-button clay-button" 
+        {...props} 
+        download={download} 
+        href={link}
+      >
         {icon}
         <span>{text}</span>
-      </button>
+      </a>
     </div>
   );
 };

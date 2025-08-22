@@ -139,7 +139,7 @@ function App() {
                 <h1>Thulani Langa</h1>
                 <p className='quote'>If we believe in nothing, if nothing has any meaning and if we can affirm no values whatsoever, then everything is possible and nothing has any importance.</p>
                 <div className="button-container">
-                  <Button icon={icons.download} text="Download CV" />
+                  <Button icon={icons.download} text="Download CV" href="#"/>
                   <Button icon={icons.contact} text="Contact Me" />
                 </div>
             </div>

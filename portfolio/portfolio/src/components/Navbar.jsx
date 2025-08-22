@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
 import './Navbar.css';
 import {
   IoHomeOutline,
@@ -8,7 +8,6 @@ import {
   IoDocumentTextOutline,
   IoImagesOutline
 } from 'react-icons/io5';
-
 import { 
     FaGithub, 
     FaLinkedin 
@@ -36,12 +35,39 @@ const socialLinks = [
   }
 ];
 
+function getSystemTheme() {
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+}
 
 const Navbar = () => {
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem("theme") || getSystemTheme();
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  useEffect(() => {
+    const listener = (e) => {
+      if (!localStorage.getItem("theme")) {
+        setTheme(e.matches ? "dark" : "light");
+      }
+    };
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", listener);
+    return () =>
+      window.matchMedia("(prefers-color-scheme: dark)").removeEventListener("change", listener);
+  }, []);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
+  };
+
   return (
     <nav id="navbar">
         <div className="profile-container">
-            <div className="img-container">
+            <div className="img-container clay-round">
                 <img className="navImg" src={imgUrl} alt="" />
             </div>
             <div className="details-container">
@@ -68,6 +94,14 @@ const Navbar = () => {
             </li>
             ))}
         </ul>
+        <button
+          className="navbar-dark-toggle clay-button-2"
+          aria-label="Toggle dark mode"
+          onClick={toggleTheme}
+          title="Toggle dark mode"
+        >
+          {theme === "dark" ? "🌙" : "☀️"}
+      </button>
     </nav>
   );
 };

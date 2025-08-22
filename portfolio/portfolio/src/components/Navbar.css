@@ -39,14 +39,10 @@ ul {
   list-style: none;
   width: 60%;
   padding: .5rem;
+  padding-bottom: 0;
   margin: 1rem;
   margin-bottom: 0;
-  backdrop-filter: blur(5px); 
-  background-color: rgba(255, 255, 255, 1); 
-  border-radius: 50px; 
-  box-shadow: 15px 15px 68px 0px rgba(145, 192, 255, 0.5), 
-              inset -12px -12px 16px 0px rgba(145, 192, 255, 0.6), 
-              inset 0px 11px 28px 0px rgb(255, 255, 255);
+  border-top: .15rem solid #0077b5;
 }
 
 .socials li a {
@@ -64,12 +60,6 @@ ul {
   width: 200px;
   margin: auto;
   overflow: hidden;
-  backdrop-filter: blur(5px); 
-  background-color: rgba(255, 255, 255, 1); 
-  border-radius: 50%;
-  box-shadow: 15px 15px 68px 0px rgba(145, 192, 255, 0.6), 
-              inset -12px -12px 16px 0px rgba(145, 192, 255, 0.7), 
-              inset 0px 11px 28px 0px rgb(255, 255, 255);
 }
   .navImg {
     height: 100%;
@@ -82,7 +72,6 @@ ul {
   margin: 5rem 0;
   width: 280px;
   height: 80%;
-  background: #ffffff;
   padding: 1rem 0;
   backdrop-filter: blur(5px); 
   background-color: rgba(255, 255, 255, 1); 
@@ -143,6 +132,18 @@ ul {
   font-size: 20px;
 }
 
+.navbar-dark-toggle {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
 .link-text {
   white-space: nowrap;
 }
@@ -163,3 +164,48 @@ ul {
   cursor: pointer;
 }
 
+/* 🌙 Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #181c24;
+    color: #e5e9f0;
+  }
+
+  #navbar {
+    background-color: rgba(24, 28, 36, 0.98);
+    box-shadow: 35px 35px 68px 0px rgba(35, 65, 110, 0.5),
+                inset -12px -12px 16px 0px rgba(42, 63, 95, 0.6),
+                inset 0px 11px 28px 0px rgb(36, 43, 56);
+  }
+
+  .navbar-item-inner {
+    color: #bfc9db;
+    background: none;
+    border-left: 4px solid transparent;
+  }
+
+  .navbar-item-inner:hover {
+    background-color: #232a36;
+    color: #7da6ff;
+    border-left: .3rem solid #7da6ff;
+    backdrop-filter: blur(5px);
+  }
+
+  .navbar-logo svg {
+    fill: #7da6ff;
+  }
+
+  .socials li a {
+    color: #7da6ff;
+  }
+
+  .socials li a:hover {
+    color: #00b8d9;
+  }
+
+  .menu-toggle {
+    background: #232a36;
+    color: #e5e9f0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  }
+}
